@@ -37,17 +37,17 @@ const RecyclePage = () => {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center p-4 bg-white shadow-lg rounded-lg">
-            <img src="src/assets/reduce.png" alt="Reduce" className="w-16 h-16 mx-auto mb-4" />
+            <img src="src/assets/reduce.png" alt="Reduce" className="w-16y h-16 mx-auto" />
             <h4 className="text-green-600 font-bold mb-2">Reduce</h4>
             <p>Mengurangi penggunaan bahan yang tidak perlu dan mengurangi jumlah sampah yang dihasilkan.</p>
           </div>
           <div className="text-center p-4 bg-white shadow-lg rounded-lg">
-            <img src="src/assets/reuse.png" alt="reuse.png" className="w-16 h-16 mx-auto mb-4" />
+            <img src="src/assets/reuse.png" alt="reuse.png" className="w-16 h-16 mx-auto" />
             <h4 className="text-green-600 font-bold mb-2">Reuse</h4>
             <p>Menggunakan kembali bahan yang masih bisa digunakan dan meminimalkan jumlah sampah.</p>
           </div>
           <div className="text-center p-4 bg-white shadow-lg rounded-lg">
-            <img src="src/assets/recycle.png" alt="Recycle" className="w-16 h-16 mx-auto mb-4" />
+            <img src="src/assets/recycle.png" alt="Recycle" className="w-16 h-16 mx-auto" />
             <h4 className="text-green-600 font-bold mb-2">Recycle</h4>
             <p>Mengolah kembali sampah menjadi bahan yang bisa digunakan kembali.</p>
           </div>

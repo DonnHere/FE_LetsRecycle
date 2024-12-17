@@ -58,7 +58,7 @@ function UserDashboard() {
   const handleLogout = () => {
     alert("Logged out successfully!");
     localStorage.removeItem("authToken"); // Hapus token dari localStorage
-    navigate("/");
+    navigate("/loginsuperadmin");
   };
 
   // Handle editing user
@@ -212,7 +212,7 @@ function UserDashboard() {
 
         {/* Edit User Modal */}
         {editingUser && (
-          <div className="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50">
+          <div className="fixed inset-0 flex justify-center items-center bg-transparen bg-opacity-50">
             <div className="bg-white p-6 rounded-lg shadow-lg w-96">
               <h2 className="text-xl font-semibold mb-4">Edit User</h2>
               <form onSubmit={handleUpdate}>

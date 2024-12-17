@@ -38,19 +38,8 @@ function LoginPage() {
       );
 
       if (response.status === 200) {
-        const { access_token, role } = response.data; // Assuming API returns "role" field
-        localStorage.setItem("authToken", access_token);
-
-        // Redirect based on role
-        if (role === "user") {
-          navigate("/landing");
-        } else if (role === "admin") {
-          navigate("/laporan");
-        } else if (role === "superadmin") {
-          navigate("/dashboard");
-        } else {
-          setError({ general: "Unknown role. Please contact support." });
-        }
+        localStorage.setItem("authToken", response.data.access_token);
+        navigate("/landing");
       }
     } catch (err) {
       if (err.response && err.response.data && err.response.data.errors) {
@@ -132,3 +121,4 @@ function LoginPage() {
 }
 
 export default LoginPage;
+

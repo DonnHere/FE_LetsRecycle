@@ -25,7 +25,7 @@ const PanduanPengelolaanSampah = () => {
     {
       judul: "Komposting",
       deskripsi: "Cara mengubah sampah organik menjadi pupuk berguna untuk tanaman.",
-      gambar: "/src/assets/foot.png",
+      gambar: "/src/assets/kompos.png",
       icon: "🌱"
     }
   ];

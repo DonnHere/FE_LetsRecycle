@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"; 
 import logo from '../assets/logo.jpg';
 import axios from 'axios';
-import { FaFileAlt } from 'react-icons/fa'; // Add the report icon
+import { FaFileAlt, FaSignOutAlt } from 'react-icons/fa'; // Add the report and logout icons
 
 function ReportDashboard() {
   const [reports, setReports] = useState([]); // State for storing reports
@@ -96,6 +96,11 @@ function ReportDashboard() {
     }
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem('authToken'); // Remove auth token
+    window.location.href = '/loginadmin'; // Redirect to login page
+  };
+
   if (loading) {
     return <div className="flex justify-center items-center h-full w-full">Loading...</div>;
   }
@@ -120,6 +125,15 @@ function ReportDashboard() {
             </li>
           </ul>
         </nav>
+        <div className="w-full">
+          <button 
+            className="text-red-600 flex items-center px-4 py-2 cursor-pointer hover:bg-gray-100 rounded"
+            onClick={handleLogout}
+          >
+            <FaSignOutAlt className="text-xl " /> {/* Logout Icon */}
+            <span className="ml-3 text-lg font-semibold">Logout</span>
+          </button>
+        </div>
       </aside> 
 
       {/* Main content */}

@@ -49,7 +49,7 @@ function SuperAdminLoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-md flex flex-col justify-center">
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Admin Login</h2>
+        <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">SuperAdmin Login</h2>
         {error && <p className="text-red-500 text-center text-sm mb-4">{error}</p>}
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
